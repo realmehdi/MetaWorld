@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/icon-x"
+      href="./src/img/favicon.png"
+    />
+    <link rel="stylesheet" href="./src/css/assets/output.css" />
+    <script defer src="./src/js/script.js"></script>
+
+    <title>METAWORLD</title>
+  </head>
+
+  <body class="font-primary text-primaryTextColor">
+    <header class="bg-headerBgColor px-5 md:px-6 lg:px-8 h-screen w-full">
+      <!-- Navbar -->
+      <nav class="flex justify-between items-center py-6 lg:py-8">
+        <div class="flex justify-between items-center lg:order-1">
+          <!-- dashbord and cart  -->
+          <svg
+            class="fill-primaryTextColor h-5 w-5 ml-5 md:h-6 md:w-6 lg:h-7 lg:w-7 cursor-pointer"
+          >
+            <use href="./src/img/icons.svg#icon-user"></use>
+          </svg>
+          <svg
+            class="fill-primaryTextColor h-5 w-5 ml-5 md:h-6 md:w-6 lg:h-7 lg:w-7 cursor-pointer"
+          >
+            <use href="./src/img/icons.svg#icon-shopping-cart"></use>
+          </svg>
+          <!-- search box -->
+          <div class="hidden sm:block">
+            <form class="flex items-center bg-white rounded-md max-w-xs">
+              <input
+                class="pr-3 py-2 w-full rounded-md border-0 outline-0"
+                type="text"
+                placeholder="جستوجو..."
+              />
+              <button class="bg-colorGrad1 py-2.5 px-4 rounded-md group">
+                <svg
+                  class="fill-white h-5 w-5 cursor-pointer group-hover:scale-105"
+                >
+                  <use href="./src/img/icons.svg#icon-search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Logo -->
+        <div class="lg:order-3">
+          <span
+            class="select-none font-secondary text-lg lg:text-2xl font-bold text-colorGrad1"
+            >MetaWorld</span
+          >
+        </div>
+
+        <button class="btn-open-modal lg:hidden">
+          <svg class="fill-primaryTextColor h-6 w-6 cursor-pointer">
+            <use href="./src/img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <!-- Nav List  -->
+        <ul
+          class="fixed top-0 -right-60 bg-white w-60 h-screen lg:static lg:flex lg:justify-between lg:bg-headerBgColor lg:h-auto lg:w-auto z-20 transition-all ease-linear duration-300 lg:order-2"
+          id="sidebar-menu"
+        >
+          <button
+            class="btn-close-modal lg:hidden w-8 h-8 absolute cursor-pointer left-4 top-4 flex items-center justify-center z-10"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+
+          <!-- Lists go here  -->
+          <li class="mobile-list mt-10 lg:mt-0">
+            <svg
+              class="w-5 h-5 inline-block ml-2 lg:hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
+              />
+            </svg>
+            <a href="#">گسب و کار</a>
+          </li>
+          <li class="mobile-list">
+            <svg
+              class="w-5 h-5 inline-block ml-2 lg:hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+              />
+            </svg>
+
+            <a href="#">پشتیبانی</a>
+          </li>
+          <li class="mobile-list">
+            <svg
+              class="w-5 h-5 inline-block ml-2 lg:hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <a href="#">اکسپلور</a>
+          </li>
+          <li class="mobile-list">
+            <svg
+              class="w-5 h-5 inline-block ml-2 lg:hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+              />
+            </svg>
+            <a href="#">محصولات</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sm:hidden mt-0">
+        <form class="flex items-center bg-white rounded-md max-w-xs mx-auto">
+          <input
+            class="pr-3 py-2 w-full rounded-md border-0 outline-0"
+            type="text"
+            placeholder="جستوجو..."
+          />
+          <button class="bg-colorGrad1 py-2.5 px-4 rounded-md group">
+            <svg
+              class="fill-white h-5 w-5 cursor-pointer group-hover:scale-105"
+            >
+              <use href="./src/img/icons.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Header Tltle -->
+      <div>
+        <img src="./src/img/iphone-14.png" alt="iphone" />
+        <div>
+          <h1>
+            <h2>قدرت گرفته شده</h2>
+            <h2>توسط ذهن</h2>
+            <h2>هدایت شده توسط ارزش ها</h2>
+          </h1>
+          <div>
+            <button>همین حالا بخر</button>
+            <button>بیشتر بدانید</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      class="ovelay fixed top-0 left-0 w-full h-screen bg-stone-500 bg-opacity-30 backdrop-blur-sm hidden"
+    ></div>
+  </body>
+</html>

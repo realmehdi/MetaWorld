@@ -1,0 +1,18 @@
+{
+  "name": "metaworld",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.html",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/css/main.css -o ./src/css/assets/output.css --watch"
+  },
+  "author": "Mehdi Latifi",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.11",
+    "postcss": "^8.4.16",
+    "postcss-import": "^15.0.0",
+    "postcss-nesting": "^10.2.0",
+    "tailwindcss": "^3.1.8"
+  }
+}
