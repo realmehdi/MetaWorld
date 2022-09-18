@@ -16,7 +16,7 @@
   </head>
 
   <body class="font-primary text-primaryTextColor">
-    <header class="bg-headerBgColor px-5 md:px-6 lg:px-8 h-screen w-full">
+    <header class="bg-headerBgColor px-5 md:px-6 lg:px-8 max-h-screen">
       <!-- Navbar -->
       <nav class="flex justify-between items-center py-6 lg:py-8">
         <div class="flex justify-between items-center lg:order-1">
@@ -33,13 +33,13 @@
           </svg>
           <!-- search box -->
           <div class="hidden sm:block">
-            <form class="flex items-center bg-white rounded-md max-w-xs">
+            <form class="flex items-center bg-white rounded-md w-52">
               <input
                 class="pr-3 py-2 w-full rounded-md border-0 outline-0"
                 type="text"
                 placeholder="جستوجو..."
               />
-              <button class="bg-colorGrad1 py-2.5 px-4 rounded-md group">
+              <button class="bg-gradient py-2.5 px-4 rounded-l-md group">
                 <svg
                   class="fill-white h-5 w-5 cursor-pointer group-hover:scale-105"
                 >
@@ -53,7 +53,7 @@
         <!-- Logo -->
         <div class="lg:order-3">
           <span
-            class="select-none font-secondary text-lg lg:text-2xl font-bold text-colorGrad1"
+            class="select-none font-secondary text-lg lg:text-2xl font-bold gradient transition-all ease-linear duration-500"
             >MetaWorld</span
           >
         </div>
@@ -172,7 +172,7 @@
             type="text"
             placeholder="جستوجو..."
           />
-          <button class="bg-colorGrad1 py-2.5 px-4 rounded-md group">
+          <button class="bg-gradient py-2.5 px-4 rounded-l-md group">
             <svg
               class="fill-white h-5 w-5 cursor-pointer group-hover:scale-105"
             >
@@ -183,19 +183,37 @@
       </div>
 
       <!-- Header Tltle -->
-      <div>
-        <img src="./src/img/iphone-14.png" alt="iphone" />
-        <div>
+      <div class="flex justify-around items-center max-w-full py-10">
+        <div class="basis-1/2">
           <h1>
-            <h2>قدرت گرفته شده</h2>
-            <h2>توسط ذهن</h2>
-            <h2>هدایت شده توسط ارزش ها</h2>
+            <h2 class="font-normal text-base gradient mb-1">قدرت گرفته شده</h2>
+            <h2 class="font-normal text-base mb-1">توسط ذهن</h2>
+            <h2 class="font-normal text-base truncate">
+              هدایت شده توسط ارزش ها
+            </h2>
           </h1>
-          <div>
-            <button>همین حالا بخر</button>
-            <button>بیشتر بدانید</button>
+          <div class="flex mt-6">
+            <button
+              class="truncate text-xs py-2 px-5 bg-gradient text-white rounded-md ml-6 hover:scale-105 transition-all ease-linear duration-200"
+            >
+              <span>حالا بخر</span>
+            </button>
+            <button
+              class="truncate text-sm border-primaryTextColor border-b py-2"
+            >
+              بیشتر بدانید
+            </button>
           </div>
         </div>
+        <figure
+          class="basis-1/2 flex items-center justify-center bg-center w-full h-full"
+        >
+          <img
+            class="w-full h-full"
+            src="./src/img/iphone-14.png"
+            alt="iphone"
+          />
+        </figure>
       </div>
     </header>
     <div
