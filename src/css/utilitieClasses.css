@@ -1,5 +1,5 @@
 @layer utilities {
-  .gradient {
+  .text-gradient {
     /* @apply bg-gradient-to-br from-productBgColor to-colorGrad2; */
     background: rgb(73, 92, 191);
     background: linear-gradient(
@@ -19,7 +19,7 @@
       rgba(150, 84, 201, 1) 100%
     );
   }
-  .mobile-list {
+  .nav-list {
     @apply hover:mr-4 mx-5 transition-all ease-linear duration-200 py-3 border-b border-slate-300 lg:py-0 lg:border-b-0 lg:mr-4 lg:hover:-translate-y-0.5;
   }
 }

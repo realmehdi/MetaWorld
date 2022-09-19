@@ -8,7 +8,7 @@ module.exports = {
         secondary: "Nunito",
       },
       colors: {
-        primaryTextColor: "#27272a",
+        primaryTextColor: "#44403c",
         darkBg: "#080809",
         headerBgColor: "#D1D3D5",
         productBgColor: "#A1A3A7",

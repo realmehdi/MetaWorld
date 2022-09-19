@@ -16,7 +16,9 @@
   </head>
 
   <body class="font-primary text-primaryTextColor">
-    <header class="bg-headerBgColor px-5 md:px-6 lg:px-8 max-h-screen">
+    <header
+      class="bg-headerBgColor px-5 sm:px-12 md:px-16 lg:px-20 max-h-screen"
+    >
       <!-- Navbar -->
       <nav class="flex justify-between items-center py-6 lg:py-8">
         <div class="flex justify-between items-center lg:order-1">
@@ -37,7 +39,7 @@
               <input
                 class="pr-3 py-2 w-full rounded-md border-0 outline-0"
                 type="text"
-                placeholder="جستوجو..."
+                placeholder="جستجو"
               />
               <button class="bg-gradient py-2.5 px-4 rounded-l-md group">
                 <svg
@@ -53,7 +55,7 @@
         <!-- Logo -->
         <div class="lg:order-3">
           <span
-            class="select-none font-secondary text-lg lg:text-2xl font-bold gradient transition-all ease-linear duration-500"
+            class="select-none font-secondary text-lg lg:text-2xl font-bold text-gradient transition-all ease-linear duration-500"
             >MetaWorld</span
           >
         </div>
@@ -89,7 +91,7 @@
           </button>
 
           <!-- Lists go here  -->
-          <li class="mobile-list mt-10 lg:mt-0">
+          <li class="nav-list mt-10 lg:mt-0">
             <svg
               class="w-5 h-5 inline-block ml-2 lg:hidden"
               xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +109,7 @@
             </svg>
             <a href="#">گسب و کار</a>
           </li>
-          <li class="mobile-list">
+          <li class="nav-list">
             <svg
               class="w-5 h-5 inline-block ml-2 lg:hidden"
               xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +128,7 @@
 
             <a href="#">پشتیبانی</a>
           </li>
-          <li class="mobile-list">
+          <li class="nav-list">
             <svg
               class="w-5 h-5 inline-block ml-2 lg:hidden"
               xmlns="http://www.w3.org/2000/svg"
@@ -144,7 +146,8 @@
             </svg>
             <a href="#">اکسپلور</a>
           </li>
-          <li class="mobile-list">
+          <li class="nav-list">
+            <!-- prettier-ignore -->
             <svg
               class="w-5 h-5 inline-block ml-2 lg:hidden"
               xmlns="http://www.w3.org/2000/svg"
@@ -162,6 +165,30 @@
             </svg>
             <a href="#">محصولات</a>
           </li>
+          <div
+            class="flex py-4 justify-center items-center absolute bottom-0 left-1/2 -translate-x-1/2 border-t border-slate-300 lg:hidden"
+          >
+            <svg
+              class="w-5 h-5 mr-4 fill-gray-700 hover:fill-rose-600 cursor-pointer transition-all ease-linear duration-300"
+            >
+              <use href="./src/img/icons.svg#icon-instagram"></use>
+            </svg>
+            <svg
+              class="w-5 h-5 mr-4 fill-gray-700 hover:fill-sky-500 cursor-pointer transition-all ease-linear duration-300"
+            >
+              <use href="./src/img/icons.svg#icon-twitter"></use>
+            </svg>
+            <svg
+              class="w-5 h-5 mr-4 fill-gray-700 hover:fill-rose-700 cursor-pointer transition-all ease-linear duration-300"
+            >
+              <use href="./src/img/icons.svg#icon-youtube"></use>
+            </svg>
+            <svg
+              class="w-5 h-5 mr-4 fill-gray-700 hover:fill-sky-800 cursor-pointer transition-all ease-linear duration-300"
+            >
+              <use href="./src/img/icons.svg#icon-facebook"></use>
+            </svg>
+          </div>
         </ul>
       </nav>
 
@@ -170,7 +197,7 @@
           <input
             class="pr-3 py-2 w-full rounded-md border-0 outline-0"
             type="text"
-            placeholder="جستوجو..."
+            placeholder="جستجو"
           />
           <button class="bg-gradient py-2.5 px-4 rounded-l-md group">
             <svg
@@ -183,37 +210,152 @@
       </div>
 
       <!-- Header Tltle -->
-      <div class="flex justify-around items-center max-w-full py-10">
-        <div class="basis-1/2">
-          <h1>
-            <h2 class="font-normal text-base gradient mb-1">قدرت گرفته شده</h2>
-            <h2 class="font-normal text-base mb-1">توسط ذهن</h2>
-            <h2 class="font-normal text-base truncate">
-              هدایت شده توسط ارزش ها
-            </h2>
-          </h1>
-          <div class="flex mt-6">
-            <button
-              class="truncate text-xs py-2 px-5 bg-gradient text-white rounded-md ml-6 hover:scale-105 transition-all ease-linear duration-200"
-            >
-              <span>حالا بخر</span>
-            </button>
-            <button
-              class="truncate text-sm border-primaryTextColor border-b py-2"
-            >
-              بیشتر بدانید
-            </button>
+      <div class="relative group">
+        <!-- Slider 1 -->
+        <div class="flex justify-around items-center max-w-full py-10">
+          <div class="basis-1/2">
+            <h1>
+              <h2
+                class="text-lg text-gradient mb-1 sm:text-xl sm:font-medium sm:mb-3 md:text-3xl md:mb-4 lg:text-5xl lg:font-semibold lg:mb-6 cursor-default"
+              >
+                قدرتمند
+              </h2>
+              <h2
+                class="text-lg mb-1 sm:text-xl sm:font-medium sm:mb-3 md:text-3xl md:mb-4 lg:text-5xl lg:font-semibold lg:mb-6 cursor-default"
+              >
+                به واسطه ذهن
+              </h2>
+              <h2
+                class="text-lg truncate sm:text-xl sm:font-medium sm:mb-3 md:text-3xl md:mb-4 lg:text-5xl lg:font-semibold lg:mb-6 cursor-default"
+              >
+                هدایت به واسطه ارزش ها
+              </h2>
+            </h1>
+            <div class="flex mt-6 md:mt-8 lg:mt-12">
+              <button
+                class="truncate text-xs py-2 px-5 md:text-sm md:px-6 lg:text-base lg:py-3 lg:px-8 bg-gradient text-white rounded-md ml-6 hover:scale-105 transition-all ease-linear duration-200"
+              >
+                <span>حالا بخر</span>
+              </button>
+              <button
+                class="truncate text-sm md:text-base lg:text-lg border-primaryTextColor border-b lg:border-b-2 py-2"
+              >
+                بیشتر بدانید
+              </button>
+            </div>
           </div>
+          <figure class="basis-1/2">
+            <img
+              class="max-h-[32rem] mx-auto"
+              src="./src/img/iphone-14.png"
+              alt="iphone"
+            />
+          </figure>
         </div>
-        <figure
-          class="basis-1/2 flex items-center justify-center bg-center w-full h-full"
+        <!-- Slider 2 -->
+        <!-- <div
+          class="flex justify-around items-center max-w-full py-10 absolute top-0"
         >
-          <img
-            class="w-full h-full"
-            src="./src/img/iphone-14.png"
-            alt="iphone"
-          />
-        </figure>
+          <div class="basis-1/2">
+            <h1>
+              <h2
+                class="text-lg text-gradient mb-1 sm:text-xl sm:font-medium sm:mb-3 md:text-3xl md:mb-4 lg:text-5xl lg:font-semibold lg:mb-6 cursor-default"
+              >
+                قدرتمند
+              </h2>
+              <h2
+                class="text-lg mb-1 sm:text-xl sm:font-medium sm:mb-3 md:text-3xl md:mb-4 lg:text-5xl lg:font-semibold lg:mb-6 cursor-default"
+              >
+                به واسطه ذهن
+              </h2>
+              <h2
+                class="text-lg truncate sm:text-xl sm:font-medium sm:mb-3 md:text-3xl md:mb-4 lg:text-5xl lg:font-semibold lg:mb-6 cursor-default"
+              >
+                هدایت به واسطه ارزش ها
+              </h2>
+            </h1>
+            <div class="flex mt-6 md:mt-8 lg:mt-12">
+              <button
+                class="truncate text-xs py-2 px-5 md:text-sm md:px-6 lg:text-base lg:py-3 lg:px-8 bg-gradient text-white rounded-md ml-6 hover:scale-105 transition-all ease-linear duration-200"
+              >
+                <span>حالا بخر</span>
+              </button>
+              <button
+                class="truncate text-sm md:text-base lg:text-lg border-primaryTextColor border-b lg:border-b-2 py-2"
+              >
+                بیشتر بدانید
+              </button>
+            </div>
+          </div>
+          <figure class="basis-1/2">
+            <img
+              class="max-h-[32rem] mx-auto"
+              src="./src/img/macbook-pro.png"
+              alt="iphone"
+            />
+          </figure>
+        </div> -->
+        <!-- Slider 3 -->
+        <!-- <div
+          class="flex justify-around items-center max-w-full py-10 absolute top-0"
+        >
+          <div class="basis-1/2">
+            <h1>
+              <h2
+                class="text-lg text-gradient mb-1 sm:text-xl sm:font-medium sm:mb-3 md:text-3xl md:mb-4 lg:text-5xl lg:font-semibold lg:mb-6 cursor-default"
+              >
+                قدرتمند
+              </h2>
+              <h2
+                class="text-lg mb-1 sm:text-xl sm:font-medium sm:mb-3 md:text-3xl md:mb-4 lg:text-5xl lg:font-semibold lg:mb-6 cursor-default"
+              >
+                به واسطه ذهن
+              </h2>
+              <h2
+                class="text-lg truncate sm:text-xl sm:font-medium sm:mb-3 md:text-3xl md:mb-4 lg:text-5xl lg:font-semibold lg:mb-6 cursor-default"
+              >
+                هدایت به واسطه ارزش ها
+              </h2>
+            </h1>
+            <div class="flex mt-6 md:mt-8 lg:mt-12">
+              <button
+                class="truncate text-xs py-2 px-5 md:text-sm md:px-6 lg:text-base lg:py-3 lg:px-8 bg-gradient text-white rounded-md ml-6 hover:scale-105 transition-all ease-linear duration-200"
+              >
+                <span>حالا بخر</span>
+              </button>
+              <button
+                class="truncate text-sm md:text-base lg:text-lg border-primaryTextColor border-b lg:border-b-2 py-2"
+              >
+                بیشتر بدانید
+              </button>
+            </div>
+          </div>
+          <figure class="basis-1/2">
+            <img
+              class="max-h-[32rem] mx-auto"
+              src="./src/img/apple-watch.png"
+              alt="iphone"
+            />
+          </figure>
+        </div> -->
+
+        <button
+          class="hidden md:block py-2 px-2 rounded-full bg-slate-200 bg-opacity-50 cursor-pointer absolute top-1/2 -right-8 translate-x-1/2 -translate-y-1/2 border-0 transition-opacity ease-linear duration-300 opacity-0 group-hover:opacity-100"
+        >
+          <!-- prettier-ignore -->
+          <svg class="text-text-gradient w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
+        <button
+          class="hidden md:block py-2 px-2 rounded-full bg-slate-200 bg-opacity-50 cursor-pointer absolute top-1/2 -left-8 -translate-x-1/2 -translate-y-1/2 border-0 transition-opacity ease-linear duration-300 opacity-0 group-hover:opacity-100"
+        >
+          <!-- prettier-ignore -->
+          <svg class="text-text-gradient w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </button>
+        <div class="dots"></div>
       </div>
     </header>
     <div
