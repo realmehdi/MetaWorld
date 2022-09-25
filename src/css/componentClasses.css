@@ -1,0 +1,5 @@
+@layer components {
+  .tab-active {
+    @apply text-headerBgColor bg-productBgColor bg-opacity-30 border-b-2 border-headerBgColor rounded-t-lg;
+  }
+}
