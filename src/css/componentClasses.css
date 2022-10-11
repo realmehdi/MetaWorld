@@ -1,5 +1,11 @@
 @layer components {
   .tab-active {
-    @apply text-headerBgColor bg-productBgColor bg-opacity-30 border-b-2 border-headerBgColor rounded-t-lg;
+    @apply text-headerBgColor bg-productBgColor bg-opacity-30 border-b-2 border-headerBgColor rounded-t-lg transition-all ease-linear duration-200;
+  }
+  .products__product-active {
+    @apply mt-8 grid sm:grid-cols-2 lg:grid-cols-3;
+  }
+  .sticky-nav {
+    @apply lg:sticky lg:top-0 lg:z-10;
   }
 }
